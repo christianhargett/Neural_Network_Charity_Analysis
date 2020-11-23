@@ -9,4 +9,4 @@ In this project we are attempting to create a binary classifier that is capable 
 ### Data Processing
 - Our target variable is the "IS_SUCESSFUL" column in our dataset. This column contains a value of either "0" or "1"; a score of "0" means that the company used the funding effectively while a "1" score means the company DID use their funds effectively.
 - The datapoints that our neural network uses to determine if an applicant will be successful or not are called "features" Our feature variables are as follows: "APPLICATION_TYPE", "CLASSIFICATION", "AFFILIATION", "USE_CASE", "ORGANIZATION", "SPECIAL_CONSIDERATIONS", "INCOME_AMT".
-- 
+- Variables that are neither targets nor features are as follows: "EIN" and "NAME". These are the first two columns in our dataset. These datapoints are purely unique identifiers for each applicant and bare no weight in our neural network model when determining successful applicants. These columns can be removed from our dataset.
